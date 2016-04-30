@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contactos</title>
+    <link href="View/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <h4 class="text-left">Contactos
+      <div class="btn-group" role="group" aria-label="..." text="Datos del contacto.">
+        <button type="button" id= "btnAgregar" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span></button>
+        <button type="button" id= "btnRefrescar" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></button>
+        <button type="button" id= "btnEliminar" class="btn btn-default"><span class="glyphicon glyphicon-remove"></button>
+      </div>
+    </h4>
+    <div class="form-group">
+      <label for="txtNombre">Nombre</label>
+      <input type="text" class="form-control" id="txtNombre"
+         placeholder="Introduce el nombre" maxlength="30">
+    </div>
+    <div class="form-group">
+      <label for="txtTelefono">Teléfono</label>
+      <input type="number" class="form-control" id="txtTelefono"
+         placeholder="Introduce el teléfono" maxlength="8">
+    </div>
+    <div class="form-group">
+      <label for="txtEmail">Email</label>
+      <input type="email" class="form-control" id="txtEmail"
+         placeholder="Introduce el email" maxlength="30">
+    </div>
+    <div class="form-group">
+      <label for="txtTelefono">Dirección</label>
+      <input type="text" class="form-control" id="txtDireccion"
+         placeholder="Introduce la dirección" maxlength="50">
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">Detalle de Contactos</div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+            <th>Email</th>
+            <th>Dirección</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="View/js/bootstrap.min.js"></script>
+   <script src="agenda.js"></script>
+   <script src="app.js"></script>
+   <script src="script.js"></script>
+  </body>
+</html>
